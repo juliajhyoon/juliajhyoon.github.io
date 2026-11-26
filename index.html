@@ -132,6 +132,15 @@
   html[data-lang="ko"] .steps h3 { font-size: 1.2rem; }
   .steps p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
 
+  .awards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+  .awards li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .awards .what { font-family: var(--display); font-size: 1.35rem; line-height: 1.3; }
+  html[data-lang="ko"] .awards .what { font-size: 1.1rem; }
+  .awards .yr { display: block; font-family: var(--body); font-size: .72rem; letter-spacing: .14em; color: var(--ink-soft); margin-top: 2px; }
+  .awards .honor { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--varnish); text-align: right; flex-shrink: 0; max-width: 45%; }
+  html[data-lang="ko"] .awards .honor { letter-spacing: .04em; font-size: .88rem; }
+  .awards-intro { max-width: 36em; color: var(--ink-soft); margin: -12px 0 36px; }
+
   /* Contact */
   .contact { background: var(--varnish-deep); color: #f7efe2; text-align: center; }
   .contact .label { color: var(--gold); }
@@ -155,6 +164,7 @@
     .fact { border-left: 0; border-top: 1px solid var(--line); padding: 24px; }
     .fact:first-child { border-top: 0; }
     .ways { grid-template-columns: 1fr; }
+    .awards { grid-template-columns: 1fr; }
   }
   @media (max-width: 420px) { .wrap { padding: 0 16px; } .brand { font-size: 1.15rem; } }
 </style>
@@ -167,6 +177,7 @@
     <nav>
       <a class="link" href="#about"><span lang="en">About</span><span lang="ko">소개</span></a>
       <a class="link" href="#teaching"><span lang="en">Teaching</span><span lang="ko">교육 철학</span></a>
+      <a class="link" href="#awards"><span lang="en">Awards</span><span lang="ko">수상</span></a>
       <a class="link" href="#lessons"><span lang="en">Lessons</span><span lang="ko">레슨 안내</span></a>
       <a class="link" href="#contact"><span lang="en">Contact</span><span lang="ko">문의</span></a>
       <div class="lang" role="group" aria-label="Language / 언어">
@@ -260,6 +271,22 @@
         <p lang="ko">누구나 바이올린을 배울 수 있습니다. 학생마다 필요한 부분에 맞춰 세심하게 지도합니다.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <p class="label"><span lang="en">Student achievements</span><span lang="ko">학생 수상 경력</span></p>
+    <h2><span lang="en">Our students shine.</span><span lang="ko">학생들의 빛나는 성과</span></h2>
+    <p class="awards-intro" lang="en">Recent honors earned by students of the studio.</p>
+    <p class="awards-intro" lang="ko">스튜디오 학생들이 최근 거둔 성과입니다.</p>
+    <ul class="awards">
+        <li><span class="what"><span lang="en">Governor's School</span><span lang="ko">거버너스 스쿨</span><span class="yr">2026</span></span><span class="honor"><span lang="en">Selected</span><span lang="ko">선발</span></span></li>
+        <li><span class="what"><span lang="en">Junior Regional Orchestra</span><span lang="ko">주니어 지역 오케스트라</span></span><span class="honor"><span lang="en">Concertmaster</span><span lang="ko">악장</span></span></li>
+        <li><span class="what"><span lang="en">Senior Regional Orchestra</span><span lang="ko">시니어 지역 오케스트라</span></span><span class="honor"><span lang="en">Assistant Principal</span><span lang="ko">부수석</span></span></li>
+        <li><span class="what"><span lang="en">NVMTA Achievement Award</span><span lang="ko">NVMTA 어치브먼트 어워드</span></span><span class="honor"><span lang="en">3rd Place</span><span lang="ko">3위</span></span></li>
+        <li><span class="what"><span lang="en">Concerto Competition</span><span lang="ko">협주곡 콩쿠르</span></span><span class="honor"><span lang="en">Honorable Mention</span><span lang="ko">장려상</span></span></li>
+    </ul>
   </div>
 </section>
 
